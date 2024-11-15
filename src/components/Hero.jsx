@@ -25,8 +25,8 @@ const Hero = () => {
 
   useEffect(() => {
     // Preload first image to avoid delay on initial render
-    // const image = new Image();
-    // image.src = images[currentImageIndex].src;
+    const image = new Image();
+    image.src = images[currentImageIndex].src;
     // If more images need to be preloaded, you can loop over the images array
     images.forEach(imageItem => {
       const img = new Image();
