@@ -40,22 +40,57 @@ import {
     },
   ];
   
+  const choices = [
+    {
+      title:"Cloud Security Excellence",
+    },
+    {
+      title:"AI-Powered Penetration Testing",
+    },
+    {
+      title:"Tailored Solutions for Business Needs",
+    },
+  ]
   const services = [
     {
-      title: "Web Developer",
+      title: "IT Security",
       icon: web,
+      lists: [
+        "Penetration Testing",
+        "Security Audits",
+        "Incident Response",
+        "Risk Management and Compliance",
+      ],
     },
     {
-      title: "React Native Developer",
+      title: "Cloud Solutions",
       icon: mobile,
+      lists: [
+        "Cloud Migration",
+        "Cloud Security",
+        "Cloud Management Services",
+        "Cloud Consulting",
+      ],
     },
     {
-      title: "Backend Developer",
+      title: "Virtual Services",
       icon: backend,
+      lists: [
+        "Virtual CISO",
+        "Managed Detection and Response",
+        "Cyber Security Consulting",
+        
+      ],
     },
     {
-      title: "Content Creator",
+      title: "Development",
       icon: creator,
+      lists: [
+        "Software Development",
+        "App Solutions for Android & IOS",
+        "Technology Consulting",
+        
+      ],
     },
   ];
   
@@ -114,6 +149,15 @@ import {
     },
   ];
   
+  const serviceList = [{
+    lists: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  }]
+
   const experiences = [
     {
       title: "React.js Developer",
@@ -262,4 +306,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services,choices, serviceList, technologies, experiences, testimonials, projects };
