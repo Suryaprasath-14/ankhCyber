@@ -5,6 +5,7 @@ import {ComputersCanvas} from './canvas'
 import Adobe from '../assets/Adobe.jpeg'
 import Adobe1 from '../assets/Adobe1.jpeg'
 import istock from '../assets/istock.jpg'
+import { iStock2 } from '../assets'
 import {fadeIn, textVariant} from '../utils/motion'
 
 
@@ -12,8 +13,8 @@ const Hero = () => {
 
   const images = [
     {src:Adobe1, title: 'Ankh Cybernetic Technologies Pvt Ltd', subtitle: 'Innovative VAPT Solutions for Cloud Security and AI-Driven Penetration Testing'}, // Your first image
-    {src : Adobe, title: 'Next-Generation Cybersecurity for the Modern Enterprise', subtitle: 'Ankh Cybernetic offers tailored Vulnerability Assessment and Penetration Testing (VAPT) services focused on securing cloud environments and leveraging AI-driven insights. Our solutions empower businesses to stay ahead of evolving threats, ensuring compliance, protecting assets, and enhancing resilience.'}, // Your second image
-    {src: Adobe1, title: 'Welcome Ankh', subtitle: 'Cybernetic Innovations'}, // Your third image
+    {src : iStock2, title: 'Next-Generation Cybersecurity for the Modern Enterprise', subtitle: 'Ankh Cybernetic offers tailored Vulnerability Assessment and Penetration Testing (VAPT) services focused on securing cloud environments and leveraging AI-driven insights. Our solutions empower businesses to stay ahead of evolving threats, ensuring compliance, protecting assets, and enhancing resilience.'}, // Your second image
+    // {src: iStock2, title: 'Welcome Ankh', subtitle: 'Cybernetic Innovations'}, // Your third image
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [animating, setAnimating] = useState(false); // Control animation state (to prevent overlapping animations)

@@ -31,8 +31,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import movie from "./movie.mp4"
+import iStock1 from "./iStock1.jpg"
+import iStock2 from "./iStock2.jpg"
 
 export {
+  iStock1,
+  iStock2,
   movie,
   logo,
   download,
