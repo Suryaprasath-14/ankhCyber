@@ -3,7 +3,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 import {styles} from '../styles'
 import {ComputersCanvas} from './canvas'
 import Adobe from '../assets/Adobe.jpeg'
-import Adobe1 from '../assets/Adobe1.jpeg'
+import { Adobe1 } from '../assets'
 import istock from '../assets/istock.jpg'
 import { iStock2 } from '../assets'
 import {fadeIn, textVariant} from '../utils/motion'
@@ -24,6 +24,14 @@ const Hero = () => {
 
 
   useEffect(() => {
+    // Preload first image to avoid delay on initial render
+    // const image = new Image();
+    // image.src = images[currentImageIndex].src;
+    // If more images need to be preloaded, you can loop over the images array
+    images.forEach(imageItem => {
+      const img = new Image();
+      img.src = imageItem.src;
+    });
     // After the first render, disable the "first render" flag
    if(isFirstRender){
     setIsFirstRender(false);

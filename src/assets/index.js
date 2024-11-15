@@ -32,11 +32,14 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import movie from "./movie.mp4"
 import iStock1 from "./iStock1.jpg"
-import iStock2 from "./iStock2.jpg"
+// import iStock2 from "./iStock2.jpg"
+import iStock2 from "./iStock2.webp"
+import Adobe1 from "./Adobe1.webp"
 
 export {
   iStock1,
   iStock2,
+  Adobe1,
   movie,
   logo,
   download,
